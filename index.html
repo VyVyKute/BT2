@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- links ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- links bootstrap -->
+    <!-- link css files -->
+    <!-- <link rel="stylesheet" href="./assets/css/app.css"> -->
+    <link rel="stylesheet" href="./assets/sass/app.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="outter container">
+        <header class="header">
+            <div class="header-nav">
+                <div class="header-logo">
+                    nick johnston
+                </div>
+                <div class="header-icon">
+                    <ion-icon id="openbtn" onclick="openNav()" name="reorder-four-outline"></ion-icon>
+                    <ion-icon id="closebtn" name="close-outline" href="javascript:void(0)" class="closebtn"
+                        onclick="closeNav()">
+                    </ion-icon>
+                    <div id="mySidenav" class="sidenav">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Work</a>
+                        <a href="#">Clients</a>
+                        <p class="active">dribbble</p>
+                        <p>instagram</p>
+                    </div>
+                </div>
+            </div>
+            <div class="header-content">
+                <h1>Hello! I'm Nick Johnston, a versatile designer living is squamish, BC. My current focus is designing
+                    digital experiences at <p>input.</p>
+                </h1>
+            </div>
+            <div class="header-button">
+                <h3>view work</h3>
+                <ion-icon name="arrow-down-outline"></ion-icon>
+            </div>
+        </header>
+        <section class="section-1"></section>
+        <section class="section-2"></section>
+        <section class="section-3"></section>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.height = "100%";
+            document.getElementById("openbtn").style.opacity = "0";
+            document.getElementById("openbtn").style.visibility = "hidden";
+            document.getElementById("closebtn").style.opacity = "1";
+            document.getElementById("closebtn").style.visibility = "visible";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.height = "0";
+            document.getElementById("closebtn").style.opacity = "0";
+            document.getElementById("openbtn").style.opacity = "1";
+            document.getElementById("closebtn").style.visibility = "hidden";
+            document.getElementById("openbtn").style.visibility = "visible";
+        }
+    </script>
+</body>
+
+</html>

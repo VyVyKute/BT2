@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*, *:after, *:before {
+  box-sizing: border-box; }
+
+input, textarea, select, button {
+  cursor: pointer; }
+
+a {
+  text-decoration: none; }
+
+img {
+  display: block;
+  max-width: 100%; }
+
+.container {
+  max-width: 80%;
+  margin: 0 auto; }
+
+body {
+  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  background-color: #000;
+  color: #fff; }
+
+.header {
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 100px; }
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    position: relative; }
+  .header-logo {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600; }
+    .header-logo::after {
+      content: "// digital designer";
+      color: #818181; }
+  .header-icon {
+    position: relative; }
+    .header-icon ion-icon {
+      font-size: 46px;
+      transition: all 0.4s ease-in-out;
+      position: absolute; }
+    .header-icon #closebtn {
+      opacity: 0;
+      visibility: hidden; }
+    .header-icon .sidenav {
+      height: 0;
+      width: 80%;
+      position: fixed;
+      z-index: 1;
+      top: 130px;
+      left: 10%;
+      background-color: black;
+      overflow: hidden;
+      transition: 0.5s;
+      margin-top: 100px;
+      text-align: right;
+      font-family: 'Playfair Display', serif; }
+      .header-icon .sidenav a {
+        padding: 8px 40px 8px 32px;
+        text-decoration: none;
+        font-size: 55px;
+        color: #ffffff;
+        display: block;
+        transition: 0.3s;
+        position: relative; }
+        .header-icon .sidenav a::after {
+          content: " ";
+          position: absolute;
+          right: 0;
+          top: 58%;
+          height: 3px;
+          width: 15px;
+          background-color: #ffffff;
+          z-index: 1;
+          transition: all 0.5s ease; }
+        .header-icon .sidenav a:hover::after {
+          width: 240px; }
+      .header-icon .sidenav p {
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #bdbdbd;
+        padding-top: 20px;
+        padding-right: 40px; }
+      .header-icon .sidenav .active {
+        padding-top: 100px; }
+  .header-content h1 {
+    font-size: 55px;
+    font-family: 'Playfair Display', serif;
+    padding-right: 300px; }
+    .header-content h1 p {
+      display: inline-block;
+      font-style: italic;
+      position: relative; }
+      .header-content h1 p::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        background-image: linear-gradient(to right, #00ff9b, #00ebd7, #00d0ff, #00aeff, #0085ff); }
+  .header-button h3 {
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: 20px; }
+  .header-button ion-icon {
+    font-size: 24px; }
+
+/*# sourceMappingURL=app.css.map */
